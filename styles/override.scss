@@ -1,0 +1,31 @@
+// changing antd elements style
+.ant-card-bordered .ant-card-cover {
+  margin-right: 0;
+  margin-left: 0;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.ant-card-bordered {
+  border: none;
+}
+
+.ant-tabs-content-holder {
+  padding: 0 10px 0px 10px;
+}
+
+.ant-tabs-nav-list {
+  width: 100%;
+  .ant-tabs-tab {
+    width: 100%;
+    margin-right: 0 !important;
+    text-align: center;
+  }
+}
+
+.ant-tabs {
+  margin-top: -10px;
+  .content{
+    padding: 0;
+  }
+}
