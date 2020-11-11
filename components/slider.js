@@ -1,7 +1,7 @@
 import { Carousel, Image } from "antd";
 import { useRef } from "react";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { useItemStore } from "../stores'/itemStore";
+import  useItemStore from "../stores/itemStore";
 
 export default function Slider() {
   const { mediaHttpUrls } = useItemStore();

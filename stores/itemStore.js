@@ -1,6 +1,6 @@
 import create from "zustand";
 
-export const useItemStore = create((set) => ({
+ const useItemStore = create((set) => ({
 
   uid: "",
   setUid: (value) => set({ uid: value }),
@@ -57,3 +57,4 @@ export const useItemStore = create((set) => ({
   setMediaUrls: (value) => set({ mediaUrls: value }),
 
 }));
+export default useItemStore;

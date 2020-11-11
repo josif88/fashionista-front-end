@@ -2,7 +2,7 @@ import Footer from "../../components/footer";
 import Header from "../../components/header";
 import { useEffect } from "react";
 import Slider from "../../components/slider";
-import { useItemStore } from "../../stores'/itemStore";
+import  useItemStore  from "../../stores/itemStore";
 
 const ItemPage = (props) => {
   //zustand

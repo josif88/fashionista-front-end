@@ -4,7 +4,7 @@ import Items from "../components/items";
 
 
 //make it work offline
-ServiceWorker.register();
+// ServiceWorker.register();
 
 export default function Home(props) {
 
@@ -29,4 +29,4 @@ export async function getServerSideProps() {
   };
 }
 
-ServiceWorker.register();
+// ServiceWorker.register();
