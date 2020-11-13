@@ -11,7 +11,7 @@ export default function ComplexCard({ uid, name, logoHttpUrl }) {
           className="card item-card"
           cover={
             <LazyLoadImage
-              style={{ height: "300px", width:"100%",objectFit: "cover" }}
+              style={{ height: "300px", width: "100%", objectFit: "cover" }}
               effect="blur"
               src={logoHttpUrl}
             />
@@ -19,7 +19,7 @@ export default function ComplexCard({ uid, name, logoHttpUrl }) {
         >
           <div className="card-footer flex">
             <div className="item-card-desc">
-              <h4>{name}</h4>
+              <h4 style={{ textAlign: "center" }}>{name}</h4>
             </div>
           </div>
         </Card>
