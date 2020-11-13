@@ -8,7 +8,7 @@ export default function Home(props) {
 
   useEffect(() => {
     var requestOptions = {
-      method: "GET",
+      method: "POST",
       headers: {
         "Content-Type": "application/json",
         token: localStorage.getItem("token"),
