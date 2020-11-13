@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Input } from "antd";
+import Link from "next/link";
 
 import { useEffect, useRef, useState } from "react";
 
@@ -71,9 +72,11 @@ export default function Header({ pageTitle = "Page Title" }) {
           <a onClick={toggleSearchInput}>
             <SearchIcon />
           </a>
-          <a style={{marginLeft:10}}>
+          <Link href={`/wishlist`}>
+          <a style={{marginLeft:10}} >
           <Wishlist />
           </a>
+          </Link>
         </div>
       </div>
     </div>

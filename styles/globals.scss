@@ -62,6 +62,7 @@ a:hover {
 .container {
   max-width: 550px;
   margin: auto;
+  position: relative;
 }
 
 .flex {
@@ -81,6 +82,7 @@ a:hover {
     color: #fff;
     background: #fff;
     height: 60px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 
     .logo {
       color: #200e32;
@@ -313,4 +315,34 @@ a:hover {
 .default-button:active {
   background-color: #b30000;
   color: #fff;
+}
+
+.info-container {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-row-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+  justify-items: left;
+  padding: 30px;
+
+  h3 {
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    &.Blue {
+      background-color: #234ee5;
+      color: #fff;
+    }
+    &.Pink {
+      background-color: rgba(229, 35, 35, 0.55);
+      color: #fff;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
 }
