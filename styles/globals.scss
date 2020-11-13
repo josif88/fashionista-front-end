@@ -174,10 +174,11 @@ a:hover {
 }
 
 .item-card {
-  border-radius: 20px 20px 0px 0px;
+  // border-radius: 20px 20px 0px 0px;
   overflow: hidden;
+
   & + & {
-    margin-top: -25px;
+    margin-top: 25px;
   }
   .card-title {
     display: inline-flex;
@@ -203,12 +204,12 @@ a:hover {
     background-image: linear-gradient(to bottom, #000, transparent);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    min-height: auto;
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     z-index: 50;
+    min-height: 0;
   }
 
   .ant-card-head-title {
@@ -326,7 +327,41 @@ a:hover {
   justify-items: left;
   padding: 30px;
 
+  // buttons and labels desing
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    margin: 0;
+    display: inherit;
+    cursor: pointer;
+    transition: all 0.5s;
+    &:hover {
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      transform: translateY(-5px);
+    }
+  }
   h3 {
+    background-color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-radius: 5px;
+    &.Blue {
+      background-color: #234ee5;
+      color: #fff;
+    }
+    &.Pink {
+      background-color: rgba(229, 35, 35, 0.55);
+      color: #fff;
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+  h3:nth-child(1),
+  h3:nth-child(2) {
     background-color: #c4c4c4;
     display: flex;
     justify-content: center;
@@ -341,8 +376,48 @@ a:hover {
       background-color: rgba(229, 35, 35, 0.55);
       color: #fff;
     }
-    svg {
-      margin-right: 10px;
-    }
+  }
+}
+.divider {
+  background-color: #c4c4c4;
+  padding-left: 10px;
+}
+.complex .container .item-card .ant-card-head {
+  padding: 0;
+  display: none;
+}
+.complex .container .item-card {
+  overflow: visible;
+  margin-bottom: 20px;
+}
+.complex .item-card-desc {
+  color: #fff;
+  transform: translateY(20px);
+  background-color: #200e32;
+  padding: 5px 10px;
+  border-radius: 100px;
+  z-index: 100px;
+}
+.complex .container .item-card {
+  & + & {
+    transform: translateY(20px);
+  }
+}
+// ----------------------------------------------------------------------
+
+.single-complex .item-card-desc {
+  position: absolute !important;
+  left: 0;
+  bottom: 0;
+  color: #fff;
+  background-color: #200e32;
+  padding: 5px 10px;
+  text-align: right;
+  width: fit-content !important;
+  transform: translateX(-10px);
+}
+.single-complex .container .item-card {
+  & + & {
+    transform: translateY(20px);
   }
 }

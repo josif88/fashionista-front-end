@@ -6,8 +6,12 @@ export default function Complexes(props) {
   return (
     <div>
       <Header pageTitle={"Complexes"} />
-      <ComplexList {...props} />
+      <div className="complex">
+
+      <ComplexList {...props}  />
+      </div>
       <Footer />
+      
     </div>
   );
 }

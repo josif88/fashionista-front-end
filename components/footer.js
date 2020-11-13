@@ -4,7 +4,7 @@ export default function Footer() {
 
   return (
     <footer className="footer flex container">
-      <Link href={"/complexes"}>
+      <Link href={"/"}>
         <a>
           <div className="icon-container">
           <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
